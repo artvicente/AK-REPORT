@@ -40,7 +40,7 @@
                                 <th>BKK</th>
                                 <th>AKM</th>
                                 <th>AKO</th>
-                                <th>Action</th>
+                                <th class="text-center">Action</th> {{-- Dito in-apply ang text-center --}}
                             </tr>
                         </thead>
 
@@ -63,7 +63,7 @@
                                         <td>{{ number_format($stat->$key) }}</td>
                                     @endforeach
 
-                                    <td>
+                                    <td class="text-center"> {{-- Dito in-apply ang text-center --}}
                                         <button type="button"
                                                 class="btn btn-sm btn-info edit-stats-btn"
                                                 data-toggle="modal"
@@ -91,7 +91,7 @@
                     </table>
 
 
-                    <h5 class="mt-2 mb-3">Members Database</h5>
+                   <h5 class="mt-2 mb-3">Members Database</h5>
                     <table class="table table-bordered table-hover">
                     <thead class="table-white">
                             <tr>
@@ -99,7 +99,7 @@
                                 <th>Total BKK</th>
                                 <th>Total AKM</th>
                                 <th>Total AKO</th>
-                                <th>Action</th>
+                                <th class="text-center">Action</th> {{-- Dito in-apply ang text-center --}}
                             </tr>
                         </thead>
 
@@ -112,7 +112,7 @@
                                     <td>{{ number_format($stat->total_akm) }}</td>
                                     <td>{{ number_format($stat->total_ako) }}</td>
 
-                                    <td>
+                                    <td class="text-center"> {{-- Dito in-apply ang text-center --}}
                                         <button type="button"
                                                 class="btn btn-sm btn-info edit-members-btn"
                                                 data-toggle="modal"
@@ -224,6 +224,7 @@
                 </div>
             </form>
         </div>
+
     </div>
 </div>
 
